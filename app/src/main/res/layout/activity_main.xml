@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.manrique_matus.peoplepdm.MainActivity">
+<!--El padre esta orientacion vertical
+    Creo 2 hijos que tienen el espacio calculado usando el atributo layout_weight-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Conteo de Personas"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/contador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="0"
+            android:textSize="64sp" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignStart="@+id/title"
+            android:layout_below="@+id/contador"
+            android:layout_marginTop="25dp"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/add"
+            android:layout_alignBottom="@+id/add"
+            android:layout_toEndOf="@+id/contador"
+            android:layout_toRightOf="@+id/contador"
+            android:text="Reset" />
+
+        <ImageView
+            android:id="@+id/momazo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="41dp"
+            android:src="@drawable/ee"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Autor: Hector Manrique Matus Henriquez #00066015"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
