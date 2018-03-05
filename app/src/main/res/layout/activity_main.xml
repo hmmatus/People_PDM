@@ -11,11 +11,11 @@
     android:layout_width="match_parent"
     android:layout_height="0dp"
     android:layout_weight="5">
-
+<!--Uso relative para mover mas facilmente los objetos dentro de el, es hijo de un linearlayout-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
+    <!--Agrego id, esto ayuda a situar de manera relativa los objetos dentro del relativelayout-->
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
